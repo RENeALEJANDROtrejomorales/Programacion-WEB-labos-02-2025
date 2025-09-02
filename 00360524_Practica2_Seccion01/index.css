@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin-block: 1.5rem;
+}
+
+.page {
+    text-decoration: underline;
+}
+
+#id {
+    font-family: monospace;
+}
+
+li:has(a){
+    display: flex;
+}
+
+header h1 {
+
+}
+
+header > h1 {
+
+}
+
+h1 ~ p {
+
+}
+
+h1 + p{
+
+}
+
+h1, p {
+
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.container > div {
+  flex: 1;
+}
+
+.Imagen {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+greid-templace-rows:
+    min-content 1fr min-content
+    100px 1fr max-content
+*/
