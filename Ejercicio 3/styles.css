@@ -1,0 +1,92 @@
+:root {
+    --blue: #1e90ff;
+    --white:#ffffff;
+    --pink: #E12AFB;
+}
+
+.box {
+    display: flex;
+    background-color: var(--pink);
+}
+
+.box div {
+    margin: 10px 5px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: var(--blue);
+}
+
+.box {
+    display:  flex;
+    background-color: var(--pink);
+    flex-direction: column;
+}
+
+.box {
+    display: flex;
+    background-color: var(--pink);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box div {
+    flex-grow: 4;
+    margin: 10px 5px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: var(--blue);
+}
+
+.box div :first-child {
+    flex-grow: 12;
+}
+
+.box {
+    
+    display: flex;
+    background-color: var(--pink);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box div {
+    margin: 10px 5px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: (--blue);
+    width: 33%;
+}
+
+.box div:first-child {
+    width: 64%;
+}
+
+.item-a {
+    grid-area: header;
+    background-color: var(--blue);
+}
+
+.item-b {
+    grid-area: main;
+    background-color: var(--pink);
+}
+
+.item-c {
+    grid-area: sidebar;
+    background-color: var(--blue);
+}
+
+.item-d {
+    grid-area: footer;
+    background-color: var(--green);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: auto;
+    grid-template-areas:  
+    "header header header header"
+    "main main . sidebar"
+    "footer fooder fooder fooder";
+}
